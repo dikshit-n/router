@@ -1,5 +1,11 @@
 # @tanstack/router-core
 
+## 1.171.28
+
+### Patch Changes
+
+- [#8222](https://github.com/TanStack/router/pull/8222) [`edf0e16`](https://github.com/TanStack/router/commit/edf0e16ebfe82ec6e8f68f403a1fda8de9e28889) - Make each load transaction's completion follow its current successor so a burst of back-to-back loads wakes each superseded waiter once instead of once per successor. Previously every superseded `load()` re-polled the current transaction on each later completion, which was quadratic in microtask work.
+
 ## 1.171.27
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @tanstack/vue-router
 
+## 1.170.30
+
+### Patch Changes
+
+- [#8169](https://github.com/TanStack/router/pull/8169) [`0caf6b9`](https://github.com/TanStack/router/commit/0caf6b9a2b7e14b0b146c74cc27cb05c19d700a5) - Fix route-scoped `useMatch`, `useSearch`, and `useParams` APIs to forward the `shouldThrow` option and preserve optional return types when `shouldThrow: false`.
+
+- Updated dependencies [[`edf0e16`](https://github.com/TanStack/router/commit/edf0e16ebfe82ec6e8f68f403a1fda8de9e28889)]:
+  - @tanstack/router-core@1.171.28
+
 ## 1.170.29
 
 ### Patch Changes
